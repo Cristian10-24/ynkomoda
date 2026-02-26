@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YNKOMODA — No es moda, es actitud.</title>
+  <meta name="description" content="YNKOMODA — Moda alternativa, urbana y atrevida. Piezas únicas que rompen las reglas. Nueva colección disponible." />
+  <meta property="og:title" content="YNKOMODA — No es moda, es actitud." />
+  <meta property="og:description" content="Moda alternativa y disruptiva para quienes se atreven a ser diferentes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" id="logo-link">
+        <span class="logo-text">YNK</span><span class="logo-accent">OMODA</span>
+        <span class="logo-underline"></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link" data-section="inicio">Inicio</a></li>
+        <li><a href="#tienda" class="nav-link" data-section="tienda">Tienda</a></li>
+        <li><a href="#coleccion" class="nav-link" data-section="coleccion">Colección</a></li>
+        <li><a href="#sobre" class="nav-link" data-section="sobre">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Nueva Colección 2026
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-text="NO ES MODA,">NO ES MODA,</span>
+        <span class="title-line title-accent" data-text="ES ACTITUD.">ES ACTITUD.</span>
+      </h1>
+      <p class="hero-subtitle">Piezas que desafían lo convencional.<br/>Estilo que no pide permiso.</p>
+      <div class="hero-cta">
+        <a href="#tienda" class="btn-primary" id="shopNowBtn">
+          <span>Explorar Colección</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+        <a href="#sobre" class="btn-ghost">Nuestra historia</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Piezas únicas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Actitud</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Reglas</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-product-preview">
+      <img src="Jean.jpeg" alt="Jean Sweet Chaos YNKOMODA" class="preview-img" />
+      <div class="preview-tag">
+        <span class="tag-new">NEW</span>
+        <span class="tag-name">Sweet Chaos Jean</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BANNER ANIMADO
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span>ROMPE LAS REGLAS</span>
+      <span class="marquee-dot">✦</span>
+      <span>NO ES MODA, ES ACTITUD</span>
+      <span class="marquee-dot">✦</span>
+      <span>ALTERNATIVA</span>
+      <span class="marquee-dot">✦</span>
+      <span>URBANA</span>
+      <span class="marquee-dot">✦</span>
+      <span>DISRUPTIVA</span>
+      <span class="marquee-dot">✦</span>
+      <span>YNKOMODA 2026</span>
+      <span class="marquee-dot">✦</span>
+      <span>ROMPE LAS REGLAS</span>
+      <span class="marquee-dot">✦</span>
+      <span>NO ES MODA, ES ACTITUD</span>
+      <span class="marquee-dot">✦</span>
+      <span>ALTERNATIVA</span>
+      <span class="marquee-dot">✦</span>
+      <span>URBANA</span>
+      <span class="marquee-dot">✦</span>
+      <span>DISRUPTIVA</span>
+      <span class="marquee-dot">✦</span>
+      <span>YNKOMODA 2026</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       TIENDA
+  ═══════════════════════════════════════════ -->
+  <section id="tienda" class="shop-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">— Catálogo —</span>
+        <h2 class="section-title">La <span class="text-accent">Tienda</span></h2>
+        <p class="section-subtitle">Piezas que no encontrarás en otro lugar. Diseño sin límites.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="tops">Tops</button>
+        <button class="filter-btn" data-filter="bottoms">Bottoms</button>
+        <button class="filter-btn" data-filter="outerwear">Outerwear</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Producto 1: Chaqueta -->
+        <article class="product-card" data-category="outerwear" data-id="1">
+          <div class="product-img-wrap">
+            <img src="Chaqueta.jpeg" alt="Chaqueta Off-Shoulder Chains" class="product-img" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-id="1">Vista rápida</button>
+            </div>
+            <span class="product-badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Outerwear</span>
+            <h3 class="product-name">Chain Off-Shoulder Jacket</h3>
+            <p class="product-desc-short">Chaqueta negra off-shoulder con cadenas metálicas y cierre frontal.</p>
+            <div class="product-footer">
+              <span class="product-price">$65.000</span>
+              <button class="add-cart-btn" data-id="1" aria-label="Agregar al carrito">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 2: Jean -->
+        <article class="product-card" data-category="bottoms" data-id="2">
+          <div class="product-img-wrap">
+            <img src="Jean.jpeg" alt="Jean Sweet Chaos" class="product-img" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-id="2">Vista rápida</button>
+            </div>
+            <span class="product-badge badge-hot">HOT</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Bottoms</span>
+            <h3 class="product-name">Sweet Chaos Jean</h3>
+            <p class="product-desc-short">Jean urbano con rotos, encaje, llamas rojas y diseño gráfico alternativo.</p>
+            <div class="product-footer">
+              <span class="product-price">$70.000</span>
+              <button class="add-cart-btn" data-id="2" aria-label="Agregar al carrito">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 3: Blusa/Body -->
+        <article class="product-card" data-category="tops" data-id="3">
+          <div class="product-img-wrap">
+            <img src="Blusa.jpeg" alt="Body Chain Turtleneck" class="product-img" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-id="3">Vista rápida</button>
+            </div>
+            <span class="product-badge badge-limited">LIMITED</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Tops</span>
+            <h3 class="product-name">Chain Turtleneck Body</h3>
+            <p class="product-desc-short">Body negro de cuello alto con cutout frontal y cadenas metálicas en cascada.</p>
+            <div class="product-footer">
+              <span class="product-price">$50.000</span>
+              <button class="add-cart-btn" data-id="3" aria-label="Agregar al carrito">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NUEVA COLECCIÓN
+  ═══════════════════════════════════════════ -->
+  <section id="coleccion" class="collection-section">
+    <div class="collection-bg-text">CHAOS</div>
+    <div class="container">
+      <div class="collection-inner">
+        <div class="collection-text">
+          <span class="section-tag">— 2026 Drop —</span>
+          <h2 class="section-title">Nueva<br/><span class="text-accent">Colección</span></h2>
+          <p class="collection-desc">
+            Cada pieza nace de un estado mental, no de una tendencia.<br/>
+            <strong>Sweet Chaos</strong> es nuestra primera colección completa — donde el caos se convierte en arte usable.
+          </p>
+          <ul class="collection-features">
+            <li>
+              <span class="feat-icon">✦</span>
+              Diseños únicos, sin producción en masa
+            </li>
+            <li>
+              <span class="feat-icon">✦</span>
+              Cada pieza lleva el sello YNKOMODA
+            </li>
+            <li>
+              <span class="feat-icon">✦</span>
+              Materiales seleccionados: raso, encaje, metales
+            </li>
+            <li>
+              <span class="feat-icon">✦</span>
+              Edición limitada — cuando se acaba, se acaba
+            </li>
+          </ul>
+          <a href="#tienda" class="btn-primary">Ver la colección completa</a>
+        </div>
+        <div class="collection-visual">
+          <div class="coll-img-grid">
+            <div class="coll-img-card coll-img-large">
+              <img src="Jean.jpeg" alt="Sweet Chaos Jean" />
+              <div class="coll-img-label">Sweet Chaos Jean</div>
+            </div>
+            <div class="coll-img-stack">
+              <div class="coll-img-card">
+                <img src="Chaqueta.jpeg" alt="Chain Jacket" />
+                <div class="coll-img-label">Chain Jacket</div>
+              </div>
+              <div class="coll-img-card">
+                <img src="Blusa.jpeg" alt="Chain Body" />
+                <div class="coll-img-label">Chain Body</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE YNKOMODA
+  ═══════════════════════════════════════════ -->
+  <section id="sobre" class="about-section">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-visual">
+          <div class="about-img-wrapper">
+            <img src="Chaqueta.jpeg" alt="YNKOMODA" class="about-img" />
+            <div class="about-img-frame"></div>
+            <div class="about-tag-float">
+              <span class="float-year">EST. 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">— Nuestra historia —</span>
+          <h2 class="section-title">Sobre <span class="text-accent">YNKOMODA</span></h2>
+          <div class="about-text">
+            <p>YNKOMODA nació de una inconformidad. De mirar los aparadores y no verse reflejada. De querer algo que gritara <em>identidad</em>, no solo tendencia.</p>
+            <p>Somos una marca independiente de moda alternativa y urbana. Creamos piezas para quienes no temen destacar, para quienes usan la ropa como extensión de su actitud. Cada costura, cada cadena, cada detalle es intencional.</p>
+            <p><strong>No seguimos las reglas del mercado.</strong> Hacemos ediciones limitadas, diseños únicos, piezas que duran porque están hechas con pasión real — no por algoritmos de moda masiva.</p>
+          </div>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">⛓</span>
+              <span class="value-text">Autenticidad</span>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🔥</span>
+              <span class="value-text">Actitud</span>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">✦</span>
+              <span class="value-text">Unicidad</span>
+            </div>
+          </div>
+          <blockquote class="about-quote">
+            "La moda pasa. El estilo permanece.<br/>La actitud nunca muere."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NEWSLETTER
+  ═══════════════════════════════════════════ -->
+  <section class="newsletter-section">
+    <div class="newsletter-bg">
+      <div class="nl-glow nl-glow-left"></div>
+      <div class="nl-glow nl-glow-right"></div>
+    </div>
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="nl-content">
+          <span class="nl-badge">✦ Comunidad exclusiva ✦</span>
+          <h2 class="nl-title">Sé el primero en saber.</h2>
+          <p class="nl-desc">Drops exclusivos, preventa anticipada y contenido que no publicamos en redes. Solo para los que se atreven.</p>
+        </div>
+        <form class="nl-form" id="newsletterForm" novalidate>
+          <div class="nl-input-wrap">
+            <input type="email" id="nlEmail" name="email" placeholder="tu@correo.com" class="nl-input" required />
+            <button type="submit" class="nl-btn">
+              <span>Unirme</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+          </div>
+          <p class="nl-legal">Sin spam. Solo actitud. Puedes salirte cuando quieras.</p>
+          <div class="nl-success" id="nlSuccess">
+            <span>✓</span> ¡Bienvenida a la familia YNKOMODA!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════ -->
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">— Hablemos —</span>
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">¿Tienes una idea, quieres un diseño personalizado o simplemente quieres decir algo? Escríbenos.</p>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </span>
+            <div>
+              <span class="ci-label">Ubicación</span>
+              <span class="ci-value">Colombia</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-value">hola@ynkomoda.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+            </span>
+            <div>
+              <span class="ci-label">WhatsApp</span>
+              <span class="ci-value">+57 300 000 0000</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Nombre</label>
+              <input type="text" id="contactName" name="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="tu@correo.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Asunto</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="¿De qué se trata?" />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Mensaje</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Cuéntanos todo..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%">
+            <span>Enviar mensaje</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+          <div class="form-success" id="contactSuccess">✓ Mensaje enviado. Te respondemos pronto.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">YNK<span class="text-accent">OMODA</span></span>
+          <p class="footer-tagline">"No es moda, es actitud."</p>
+          <p class="footer-desc">Moda alternativa. Diseño sin reglas.<br/>Hecho con actitud desde Colombia.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#coleccion">Colección</a></li>
+            <li><a href="#sobre">Nosotros</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Política de devoluciones</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 YNKOMODA. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       MODAL PRODUCTO
+  ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="" alt="" id="modalImg" class="modal-img" />
+          <span class="modal-badge" id="modalBadge"></span>
+        </div>
+        <div class="modal-details">
+          <span class="modal-category" id="modalCategory"></span>
+          <h2 class="modal-name" id="modalProductName"></h2>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-price-wrap">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-stock">En stock</span>
+          </div>
+          <div class="modal-sizes">
+            <label class="sizes-label">Talla:</label>
+            <div class="size-grid" id="sizeGrid">
+              <button class="size-btn" data-size="XS">XS</button>
+              <button class="size-btn" data-size="S">S</button>
+              <button class="size-btn active" data-size="M">M</button>
+              <button class="size-btn" data-size="L">L</button>
+              <button class="size-btn" data-size="XL">XL</button>
+            </div>
+          </div>
+          <div class="modal-qty">
+            <label class="sizes-label">Cantidad:</label>
+            <div class="qty-control">
+              <button class="qty-btn" id="qtyMinus">−</button>
+              <span class="qty-num" id="qtyNum">1</span>
+              <button class="qty-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+          <button class="btn-primary modal-add-btn" id="modalAddBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+            <span>Agregar al carrito</span>
+          </button>
+          <div class="modal-features">
+            <span>✦ Envío nacional disponible</span>
+            <span>✦ Edición limitada</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CARRITO DRAWER
+  ═══════════════════════════════════════════ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+    <div class="cart-header">
+      <h3>Tu Carrito</h3>
+      <button class="cart-close-btn" id="cartClose" aria-label="Cerrar carrito">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <p>Tu carrito está vacío</p>
+        <span>Agrega algunas piezas increíbles</span>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal:</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn-primary" style="width:100%" id="checkoutBtn">
+        <span>Finalizar compra</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </button>
+      <p class="cart-note">Pago seguro · Envío a todo Colombia</p>
+    </div>
+  </aside>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toastMsg">Agregado al carrito</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
